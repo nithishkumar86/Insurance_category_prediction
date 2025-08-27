@@ -36,11 +36,14 @@ The project ensures **data validation, feature engineering, and robust error han
 GET /home
 Response:
 
+
 json
 Copy code
 {
   "message": "Insurance_premium_category"
 }
+
+
 ✅ Model Check
 http
 Copy code
@@ -54,6 +57,8 @@ Copy code
   "version": "v1.0",
   "model": true
 }
+
+
 ✅ Predict Premium Category
 http
 Copy code
@@ -83,14 +88,20 @@ bash
 Copy code
 git clone https://github.com/your-username/insurance-category-prediction.git
 cd insurance-category-prediction
+
+
 2️⃣ Install Dependencies
 bash
 Copy code
 pip install -r requirements.txt
+
+
 3️⃣ Run Locally
 bash
 Copy code
 uvicorn app:app --host 0.0.0.0 --port 8000 --reload
+
+
 4️⃣ Run with Docker
 bash
 Copy code
@@ -104,6 +115,7 @@ flowchart LR
     B --> C[Feature Engineering]
     C --> D[ML Model Prediction]
     D --> E[API Response: Premium Category]
+
 🚀 Roadmap
 🔮 Improve model accuracy with additional features
 
